@@ -1,0 +1,35 @@
+{
+  "name": "novel-crawler",
+  "version": "1.0.0",
+  "description": "小说网站爬虫程序 - 支持笔趣阁等网站",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "crawl": "ts-node src/index.ts crawl",
+    "add": "ts-node src/index.ts add",
+    "list": "ts-node src/index.ts list",
+    "dev": "nodemon src/index.ts"
+  },
+  "keywords": [
+    "novel",
+    "crawler",
+    "biquge"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "cheerio": "^1.0.0-rc.12",
+    "fs-extra": "^11.2.0",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "@types/node": "^20.10.0",
+    "@types/node-cron": "^3.0.11",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
